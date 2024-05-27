@@ -21,6 +21,32 @@ db.connect((err) => {
     console.log("Connected to the database");
 });
 
+db.query("SELECT * FROM democratic_decisions_db.new_table;", (err, result) => {
+    if (err) {
+        console.error('Error creating table:', err.message);
+        return;
+    }
+    console.log(result);
+});
+
+function add_user_to_table() {
+    try {
+        // Perform database operation using db
+        db.query("SELECT * FROM democratic_decisions_db.new_table;", (err, result) => {
+            if (err) {
+                console.error('Error creating table:', err.message);
+                return;
+            }
+            console.log(result);
+        });
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+
+
+
 const port = 3000;
 
 // Create the HTTP server
