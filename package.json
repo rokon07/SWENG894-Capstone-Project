@@ -1,0 +1,17 @@
+{
+  "name": "sweng894-capstone-project",
+  "version": "1.0.0",
+  "description": "Capstone Project for SWENG 894. Vote management system web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "require": "^0.4.4"
+  }
+}

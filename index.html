@@ -6,65 +6,33 @@ PSU ID: mar6897
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Flight Ticket App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Democratic-Decisions App</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="main">
         <div class="header">
-            <h1>Flight Pricing Application</h1>
-            <h2>This Application gets you latest Flight prices.</h2>
-            <h3>Search for city/airport then select airport and dates</h3>
+            <h1>Democratic-Decisions Application</h1>
+            <h2>
+                The mission of the Democratic-Decisions web application is to enable users to engage in democratic
+                decision-making through voting. Its goal is to provide a platform where users can create polls, gain
+                insights into poll results, and participate in voting on various topics.
+            </h2>
+            <h3>Sign In</h3>
         </div>
-        <div class="cityDep" id="cityDep">
-            <h4>Departure Airport and Date</h4>
-            <input id="userCity" type="text" name="userCity" placeholder="Enter departure city/airport here ...">
-            <input id="submitButton" type="button" onclick="depart()" value="Search"><br><br>
-            <a style="color:blue;">Select Airport:</a>
-            <select id="airportList" onchange="airport()">
-                <option selected disabled>Choose one</option>
-            </select><br><br>
-            <a style="color:blue;">Date: </a><input id="depTime" type="date" onchange="getDepDate()"><br>
+        <div class="signIn" id="sign_In">
+            <input id="user_email_sign_in" type="text" name="userEmail" placeholder="Enter your email here ...">
+            <input id="user_password_sign_in" type="text" name="userPassword" placeholder="Enter your password here ...">
+            <input id="submitButton" type="button" onclick="depart()" value="Log in"><br><br>
             <div id="departResult">
-                <p id="elmnt">Selected Airport: null</p>
-                <p id="elmnt2">Depart Date: null</p>
+                <p id="elmnt">Sign In status: null</p>
             </div>
-        </div>
-        <div class="cityArrive">
-            <h4>Arrival Airport and Date</h4>
-            <input id="userCityArrive" type="text" name="userCity" placeholder="Enter Arrival city/airport here ...">
-            <input id="submitButtonArrive" type="button" onclick="arrive()" value="Search"><br><br>
-            <a style="color:blue;">Select Airport:</a>
-            <select id="airportListArrive" onchange="airportArrive()">
-                <option selected disabled>Choose one</option>
-            </select><br><br>
-            <a style="color:blue;">Date:</a> <input id="arriveTime" type="date"
-                                                    onchange="getArriveDate()"><br>
-            <div id="arriveResult">
-                <p id="elmnt3">Selected Airport: null</p>
-                <p id="elmnt4">Arrive Date: null</p>
+            <div id="registerUser">
+                <p id="elmnt">Not a user register here</p>
+                <input id="registertButton" type="button" onclick="depart()" value="Register"><br><br>
             </div>
-        </div>
-        <div class="content">
-            <div id="searchOptions">
-                <p style="color:blue;">Currency:</p>
-                <select id="currencyList" onchange="getCurrency()">
-                    <option value="USD" data-symbol="$" selected>USD ( $ )</option>
-                </select>
-                <input id="result" type="button" onclick="getResult()" value="Search results">
-                <input id="result" type="button" onclick="resetResult()" value="Reset results">
-            </div>
-            <table id="resultTable">
-                <tr id="tableHeaders">
-                    <th>Date</th>
-                    <th>Airline</th>
-                    <th>Price</th>
-                    <th>Direct</th>
-                    <th>Link</th>
-                </tr>
-            </table>
         </div>
         <div class="footer">
             Mohd Rokon <br>
