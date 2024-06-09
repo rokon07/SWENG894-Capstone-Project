@@ -17,7 +17,7 @@ PSU ID: mar6897
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Democratic-Decisions</a>
+    <a class="navbar-brand" href="#">Vote Democratic-Decisions</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,6 +28,7 @@ PSU ID: mar6897
         </li>
 
         <%if (status == "loggedIn"){%>
+            <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
             <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
         <%} else {%>
             <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
@@ -43,22 +44,11 @@ PSU ID: mar6897
             <div class="card-body">
 
                 <%if (status == "loggedIn"){%>
-                    <h5 class="card-title">Welcome <%= user.fname%>  <%= user.lname%> (Admin)</h5>
-
-                    <%if (user.role == "admin"){%>
-
-                          <form onsubmit="return false;" id="create_poll">
-                            <button onclick="document.location='/poll?<%=user.email%>'" class="btn btn-primary">Create a poll</button>
-                          </form>
-
-                    <%}else{%>
-                        <p class="card-text">Welcome Voter</p>
-                    <%}%>
-
+                    <h5 class="card-title">Welcome <%= user.email%></h5>
                 <%}else{%>
                     <h5 class="card-title">Welcome to the Democratic-Decisions web application</h5>
                 <%}%>
-                <br>
+
                 <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
@@ -73,26 +63,6 @@ PSU ID: mar6897
         </div>
     </div>
 
-    <%if (status == "loggedIn"){%>
-    <div class="container my-6">
-        <div class="card" style="width: 100%;">
-            <div class="card-body">
-                    <h5 class="card-title">Current ongoing polls</h5>
-
-                 
-                <br>
-                <h6 class="card-subtitle mb-2 text-body-secondary">View polls and analytics</h6>
-
-                <%if (user.role == "admin"){%>
-
-                    <%}else{%>
-                        <p class="card-text">Welcome Voter</p>
-                    <%}%>
-              
-            </div>
-        </div>
-    </div>
-    <%}%>
 </body>
 
 </html>

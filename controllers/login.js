@@ -15,6 +15,15 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+app.get('/poll', (req, res) => {
+    res.render('poll');
+});
+
+app.get('/vote', (req, res) => {
+    res.render('vote');
+});
+
+
 const login = async (req, res) => {
     const { email, password } = req.body
     if (!email || !password) {
@@ -38,7 +47,7 @@ const login = async (req, res) => {
                     httpOnly: true
                 }
                 res.cookie("userRegistered", token, cookieOptions)
-                return res.json({ status: "success", success: "User has been logged in" })
+                return res.json({ status: "success", success: "User has been logged in", redirectUrl: "/" })
             }
         })
     }

@@ -17,6 +17,12 @@ router.get("/register", (req, res) => {
 router.get("/login", (req, res) => {
     res.sendFile("login.html", { root: "./public" })
 })
+router.get("/poll", (req, res) => {
+    res.sendFile("poll.html", { root: "./public" })
+})
+router.get("/vote", (req, res) => {
+    res.sendFile("vote.html", { root: "./public" })
+})
 
 router.get("/logout", logout)
 

@@ -5,9 +5,7 @@
     "\\public",
     "\\public\\css",
     "\\public\\js",
-    "\\routes",
     "\\views"
   ],
-  "SelectedNode": "\\controllers\\auth.js",
   "PreviewInSolutionExplorer": false
 }
