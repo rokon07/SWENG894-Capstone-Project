@@ -1,6 +1,19 @@
 const jwt = require("jsonwebtoken")
 const db = require("../routes/db-config")
 const bcrypt = require("bcryptjs")
+const express = require('express');
+
+const app = express();
+
+
+app.set('view engine', 'ejs');
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Serve the home page
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
 const login = async (req, res) => {
     const { email, password } = req.body
@@ -8,18 +21,17 @@ const login = async (req, res) => {
         return res.json({ status: "error", error: "Please enter your email and password" })
     }
     else {
-        db.query('SELECT email FROM user_data WHERE email = ?', [email], async (err, result) => {
+        db.query('SELECT * FROM user_data WHERE email = ?', [email], async (err, result) => {
             if (err) throw err
-            if (!result[0] || !await bcrypt.compare(password, result[0].password)) {
+            if (!result.length || !await bcrypt.compare(password, result[0].password)) {
                 return res.json({
-                    status: "error"
-                    , error: "incorrect email or password"
+                    status: "error",
+                    error: `Incorrect email or password; If not a registered user please register`
                 })
             }
             else {
                 const token = jwt.sign({ id: result[0].id }, process.env.JWT_SECRET, {
-                    expiresIn: process.env.JWT_EXPIRES,
-                    httpOnly: true
+                    expiresIn: process.env.JWT_EXPIRES
                 })
                 const cookieOptions = {
                     expiresIn: new Date(Date.now() + process.env.COOKIE_EXPIRES * 24 * 60 * 60 * 1000),

@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs")
 const register = async (req, res) => {
     const { email, password: Npassword, fname, lname, phone, dob, role } = req.body
     if (!email || !Npassword) {
-        return res.json({ status: "error", error: "Please enter your email and password" })
+        return res.json({ status: "error", error: "Please enter your email and password." })
     }
     else {
 
@@ -15,7 +15,7 @@ const register = async (req, res) => {
                 throw err
             }
             if (result[0]) {
-                return res.json({ status: "error", error: "Email has already been registered" })
+                return res.json({ status: "error", error: "Email has already been registered!" })
             }
             else {
                 const password = await bcrypt.hash(Npassword, 8)
@@ -33,7 +33,7 @@ const register = async (req, res) => {
                     if (error) {
                         throw error
                     }
-                    return res.json({ status: "success", success: "User has been registered" })
+                    return res.json({ status: "success", success: "User has been registered; you can try logging in!" })
                 })
             }
         })

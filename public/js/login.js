@@ -20,6 +20,9 @@ form.addEventListener("submit", () => {
                 success.style.display = "block"
                 error.style.display = "none"
                 error.innerText = data.success
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 1000);
             }
         })
 })
