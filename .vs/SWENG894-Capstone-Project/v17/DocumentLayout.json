@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\admin.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\admin.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\vote.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\vote.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\vote.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\vote.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 219,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "vote.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\vote.js",
+              "RelativeDocumentMoniker": "controllers\\vote.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\vote.js",
+              "RelativeToolTip": "controllers\\vote.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T02:13:49.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "admin.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\admin.js",
+              "RelativeDocumentMoniker": "controllers\\admin.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\admin.js",
+              "RelativeToolTip": "controllers\\admin.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T02:12:59.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "vote.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
+              "RelativeDocumentMoniker": "public\\vote.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
+              "RelativeToolTip": "public\\vote.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-09T01:53:52.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "admin.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\admin.html",
+              "RelativeDocumentMoniker": "public\\admin.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\admin.html",
+              "RelativeToolTip": "public\\admin.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-09T01:53:25.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "logout.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
+              "RelativeDocumentMoniker": "controllers\\logout.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
+              "RelativeToolTip": "controllers\\logout.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T00:40:27.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "loggedIn.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js",
+              "RelativeDocumentMoniker": "controllers\\loggedIn.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js",
+              "RelativeToolTip": "controllers\\loggedIn.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T22:28:10.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "register.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
+              "RelativeDocumentMoniker": "public\\js\\register.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
+              "RelativeToolTip": "public\\js\\register.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T03:51:00.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\register.js",
+              "RelativeDocumentMoniker": "controllers\\register.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\register.js",
+              "RelativeToolTip": "controllers\\register.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T03:04:33.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.ejs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
+              "RelativeDocumentMoniker": "views\\index.ejs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
+              "RelativeToolTip": "views\\index.ejs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-08T02:03:54.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
+              "RelativeDocumentMoniker": "public\\register.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
+              "RelativeToolTip": "public\\register.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-08T02:03:09.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
+              "RelativeDocumentMoniker": "public\\js\\login.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
+              "RelativeToolTip": "public\\js\\login.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T03:56:36.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\login.js",
+              "RelativeDocumentMoniker": "controllers\\login.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\login.js",
+              "RelativeToolTip": "controllers\\login.js",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAD4AAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T03:24:48.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
+              "RelativeDocumentMoniker": "public\\login.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
+              "RelativeToolTip": "public\\login.html",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-08T01:54:29.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "pages.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
+              "RelativeDocumentMoniker": "routes\\pages.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
+              "RelativeToolTip": "routes\\pages.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:58:34.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "db-config.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js",
+              "RelativeDocumentMoniker": "routes\\db-config.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js",
+              "RelativeToolTip": "routes\\db-config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:56:55.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
+              "RelativeDocumentMoniker": "index.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
+              "RelativeToolTip": "index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:55:48.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "auth.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\auth.js",
+              "RelativeDocumentMoniker": "controllers\\auth.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\auth.js",
+              "RelativeToolTip": "controllers\\auth.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:59:48.773Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
