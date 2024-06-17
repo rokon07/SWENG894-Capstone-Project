@@ -27,7 +27,7 @@ app.get('/vote', (req, res) => {
 const login = async (req, res) => {
     const { email, password } = req.body
     if (!email || !password) {
-        return res.json({ status: "error", error: "Please enter your email and password" })
+        return res.json({ status: "error", error: "Please enter your email and password!" })
     }
     else {
         db.query('SELECT * FROM user_data WHERE email = ?', [email], async (err, result) => {
@@ -35,7 +35,7 @@ const login = async (req, res) => {
             if (!result.length || !await bcrypt.compare(password, result[0].password)) {
                 return res.json({
                     status: "error",
-                    error: `Incorrect email or password; If not a registered user please register`
+                    error: `Incorrect email or password! Please try again (If not a registered user please register)`
                 })
             }
             else {
@@ -47,7 +47,7 @@ const login = async (req, res) => {
                     httpOnly: true
                 }
                 res.cookie("userRegistered", token, cookieOptions)
-                return res.json({ status: "success", success: "User has been logged in", redirectUrl: "/" })
+                return res.json({ status: "success", success: "User has been logged in!", redirectUrl: "/" })
             }
         })
     }

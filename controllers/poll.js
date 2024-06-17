@@ -1,11 +1,10 @@
-const db = require("../routes/db-config")
-const bcrypt = require("bcryptjs")
+const db = require("../routes/db-config");
 
 const poll = async (req, res) => {
-    const { title, admin_email, deadline, age, candidates } = req.body;
+    const { title, admin_email, deadline, age, polltype, enableAnonymous, candidates } = req.body;
 
     if (!title || !admin_email || !deadline || !age || !candidates || candidates.length === 0) {
-        return res.json({ status: "error", error: "Please provide all required fields." });
+        return res.json({ status: "error", error: "Please provide all required fields. Ensure candidates are added!" });
     }
 
     // Insert the poll details into the polls table
@@ -13,7 +12,9 @@ const poll = async (req, res) => {
         title: title,
         admin_email: admin_email,
         deadline: deadline,
-        age_requirement: age
+        age_requirement: age,
+        poll_type: polltype,
+        enable_anonymous: enableAnonymous ? 1 : 0
     }, (error, results) => {
         if (error) {
             throw error;
@@ -26,7 +27,7 @@ const poll = async (req, res) => {
             return new Promise((resolve, reject) => {
                 db.query('INSERT INTO candidates SET ?', {
                     poll_id: pollId,
-                    name: candidate.name
+                    name: candidate
                 }, (err, res) => {
                     if (err) return reject(err);
                     resolve(res);

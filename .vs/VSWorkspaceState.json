@@ -5,7 +5,9 @@
     "\\public",
     "\\public\\css",
     "\\public\\js",
+    "\\routes",
     "\\views"
   ],
+  "SelectedNode": "\\views\\index.ejs",
   "PreviewInSolutionExplorer": false
 }

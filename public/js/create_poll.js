@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('addCandidate').addEventListener('click', () => {
         candidateCount++;
         const candidateDiv = document.createElement('div');
-        candidateDiv.className = 'mb-3';
+        candidateDiv.className = 'mb-3 candidate-div';
+        candidateDiv.id = `candidateDiv_${candidateCount}`;
         candidateDiv.innerHTML = `
             <label for="candidate_${candidateCount}" class="form-label">Candidate ${candidateCount}</label>
             <input type="text" class="form-control" id="candidate_${candidateCount}" autocomplete="off" required>
+            <button type="button" class="btn btn-danger mt-2" onclick="removeCandidate(${candidateCount})">Remove Candidate</button>
         `;
         document.getElementById('candidates').appendChild(candidateDiv);
     });
@@ -19,36 +21,78 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const admin_email = window.location.search.slice(1);
         const deadline = document.getElementById('deadline').value;
         const age = document.getElementById('age').value;
+        const polltype = document.getElementById('polltype').value;
+        const enableAnonymous = document.getElementById('enableAnonymous').checked;
         const candidates = [];
 
+        // Validate deadline
+        const now = new Date();
+        const deadlineDate = new Date(deadline);
+        if (isNaN(deadlineDate.getTime()) || deadlineDate <= now) {
+            showError('Deadline must be a valid future date and time!');
+            return;
+        }
+
+        // Validate age requirement
+        const ageRequirementDate = new Date(age);
+        if (isNaN(ageRequirementDate.getTime()) || ageRequirementDate >= now) {
+            showError('Age requirement must be a valid date in the past!');
+            return;
+        }
+
         for (let i = 1; i <= candidateCount; i++) {
-            const candidate = document.getElementById(`candidate_${i}`).value;
-            if (candidate) {
-                candidates.push({ id: i, name: candidate });
+            const candidate = document.getElementById(`candidate_${i}`);
+            if (candidate && candidate.value) {
+                candidates.push(candidate.value);
             }
         }
 
-        const response = await fetch('api/poll', {
+        // Ensure there are at least 2 candidates
+        if (candidates.length < 2) {
+            showError('Please add at least two candidates.');
+            return;
+        }
+
+        const response = await fetch('/api/poll', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ title, admin_email, deadline, age, candidates })
+            body: JSON.stringify({ title, admin_email, deadline, age, polltype, enableAnonymous, candidates })
         });
 
         const result = await response.json();
 
-        const errorElement = document.getElementById('error');
-        const successElement = document.getElementById('success');
-
         if (result.status === 'error') {
-            errorElement.style.display = 'block';
-            successElement.style.display = 'none';
-            errorElement.innerHTML = result.error;
+            showError(result.error);
         } else {
-            errorElement.style.display = 'none';
-            successElement.style.display = 'block';
-            successElement.innerHTML = result.success;
+            showSuccess(result.success);
+            setTimeout(() => {
+                window.location.href = result.redirectUrl;
+            }, 2000);
         }
     });
+
+    function showError(message) {
+        const errorElement = document.getElementById('error');
+        const successElement = document.getElementById('success');
+        errorElement.style.display = 'block';
+        successElement.style.display = 'none';
+        errorElement.innerHTML = message;
+    }
+
+    function showSuccess(message) {
+        const errorElement = document.getElementById('error');
+        const successElement = document.getElementById('success');
+        errorElement.style.display = 'none';
+        successElement.style.display = 'block';
+        successElement.innerHTML = message;
+    }
 });
+
+function removeCandidate(id) {
+    const candidateDiv = document.getElementById(`candidateDiv_${id}`);
+    if (candidateDiv) {
+        candidateDiv.remove();
+    }
+}
