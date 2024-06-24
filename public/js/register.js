@@ -104,6 +104,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     successElement.style.display = "block";
                     errorElement.style.display = "none";
                     successElement.innerText = data.success;
+                    setTimeout(() => {
+                        window.location.href = data.redirectUrl;
+                    }, 1500);
                 }
             });
     });

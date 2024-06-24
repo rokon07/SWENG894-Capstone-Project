@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         candidateDiv.className = 'mb-3 candidate-div';
         candidateDiv.id = `candidateDiv_${candidateCount}`;
         candidateDiv.innerHTML = `
-            <label for="candidate_${candidateCount}" class="form-label">Candidate ${candidateCount}</label>
+            <label for="candidate_${candidateCount}" class="form-label">Option ${candidateCount}</label>
             <input type="text" class="form-control" id="candidate_${candidateCount}" autocomplete="off" required>
-            <button type="button" class="btn btn-danger mt-2" onclick="removeCandidate(${candidateCount})">Remove Candidate</button>
+            <button type="button" class="btn btn-danger mt-2" onclick="removeCandidate(${candidateCount})">Remove Option</button>
         `;
         document.getElementById('candidates').appendChild(candidateDiv);
     });
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Ensure there are at least 2 candidates
         if (candidates.length < 2) {
-            showError('Please add at least two candidates.');
+            showError('Please add at least two options.');
             return;
         }
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             showSuccess(result.success);
             setTimeout(() => {
                 window.location.href = result.redirectUrl;
-            }, 2000);
+            }, 1000);
         }
     });
 
@@ -95,4 +95,12 @@ function removeCandidate(id) {
     if (candidateDiv) {
         candidateDiv.remove();
     }
+}
+
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
 }

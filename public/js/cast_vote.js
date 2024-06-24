@@ -76,10 +76,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     errorElement.style.display = 'block';
                     successElement.style.display = 'none';
                     errorElement.textContent = data.error;
+                    setTimeout(() => {
+                        window.location.href = data.redirectUrl;
+                    }, 1500);
                 } else {
                     errorElement.style.display = 'none';
                     successElement.style.display = 'block';
                     successElement.textContent = data.success;
+                    setTimeout(() => {
+                        window.location.href = data.redirectUrl;
+                    }, 1500);
                 }
             });
     });
