@@ -4,7 +4,8 @@
   "description": "Capstone Project for SWENG 894. Vote management system web application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --loader ts-node/esm --exit",
+    "coverage": "nyc --reporter=html --reporter=text mocha --loader ts-node/esm --exit"
   },
   "keywords": [],
   "author": "",
@@ -12,16 +13,20 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
+    "chartjs-adapter-date-fns": "^3.0.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "http": "^0.0.1-security",
-    "jest": "^29.7.0",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.10.1",
-    "node-cron": "^3.0.3",
-    "require": "^0.4.4"
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.5.2",
+    "supertest": "^7.0.0",
+    "nyc": "^15.1.0"
   }
 }

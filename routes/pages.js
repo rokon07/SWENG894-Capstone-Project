@@ -6,6 +6,7 @@ const pollDetails = require("../controllers/pollDetails");
 const pollCandidates = require("../controllers/pollCandidates");
 const removePoll = require("../controllers/removePoll");
 const verifyPollCode = require("../controllers/verifyPollCode");
+const pollAnalytics = require("../controllers/pollAnalytics"); 
 const router = express.Router();
 
 router.get("/", loggedIn, (req, res) => {
@@ -40,6 +41,8 @@ router.get("/polls/:id/candidates", pollCandidates);
 router.post("/api/remove_poll", removePoll);
 
 router.post("/api/verify_poll_code", verifyPollCode);
+
+router.get("/analytics/:id", pollAnalytics);
 
 router.get("/logout", logout);
 

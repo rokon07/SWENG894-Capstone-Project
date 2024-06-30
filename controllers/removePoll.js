@@ -9,7 +9,7 @@ const removePoll = async (req, res) => {
 
     try {
         // Delete votes table for the poll
-        const pollVotesTable = `poll_${pollId}_votes`;
+        const pollVotesTable = `votes${pollId}`.trim();
         await db.query(`DROP TABLE IF EXISTS ${pollVotesTable}`);
 
         // Delete candidates for the poll

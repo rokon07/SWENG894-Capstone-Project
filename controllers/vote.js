@@ -7,7 +7,7 @@ const vote = async (req, res) => {
         return res.json({ status: "error", error: "Please select a candidate." });
     }
 
-    const pollVotesTable = `poll_${pollId}_votes`;
+    const pollVotesTable = `votes${pollId}`.trim();
 
     try {
         // Ensure the votes table for this poll exists
