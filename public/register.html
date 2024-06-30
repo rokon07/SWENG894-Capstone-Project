@@ -61,18 +61,41 @@
                         <label for="dob" class="form-label">Date of birth</label>
                         <input type="date" class="form-control" id="dob" required>
                     </div>
+                    <br />
                     <div class="mb-3">
                         <label for="role">Choose a role:</label>
                         <select id="role" name="role">
-                            <option value="voter">Voter</option>
                             <option value="admin">Administrator</option>
+                            <option value="voter">Voter</option>
+                        </select>
+                    </div>
+
+
+                    <div class="mb-3" id="gender-container" style="display:none;">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="Unspecified">I prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" id="race-container" style="display:none;">
+                        <label for="race">Race/Ethnicity:</label>
+                        <select id="race" name="race" class="form-select">
+                            <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Black or African American">Black or African American</option>
+                            <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+                            <option value="White">White</option>
+                            <option value="Hispanic or Latino">Hispanic or Latino</option>
+                            <option value="Unspecified">I prefer not to say</option>
                         </select>
                     </div>
 
                     <div class="alert alert-danger" role="alert" id="error" style="display:none;"></div>
                     <div class="alert alert-success" role="alert" id="success" style="display:none;"></div>
 
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="submit" class="btn btn-primary" >Register</button>
                 </form>
             </div>
         </div>

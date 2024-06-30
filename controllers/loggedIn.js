@@ -1,25 +1,36 @@
-const db = require("../routes/db-config")
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
+const db = require("../routes/db-config");
 
-const loggedIn = (req, res, next) => {
-    if (!req.cookies.userRegistered) {
-        return next()
+const loggedIn = async (req, res, next) => {
+    const token = req.cookies.userRegistered;
+    if (!token) {
+        req.user = null;
+        return next();
     }
+
     try {
-        const decoded = jwt.verify(req.cookies.userRegistered, process.env.JWT_SECRET)
-        db.query('SELECT * FROM user_data WHERE id = ?', [decoded.id], (err, result) => {
-            if (err) {
-                return next()
-            }
-            req.user = result[0]
-            return next()
-        })
-    }
-    catch (err) {
-        if (err) {
-            return next()
-        }
-    }
-}
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const [userResults] = await db.query('SELECT * FROM user_data WHERE id = ?', [decoded.id]);
 
-module.exports = loggedIn
+        if (!userResults.length) {
+            req.user = null;
+            return next();
+        }
+
+        req.user = userResults[0];
+
+        // Fetch polls and attach to req object
+        const [pollResults] = await db.query('SELECT * FROM polls');
+
+        req.polls = pollResults.length ? pollResults : [];
+
+        next();
+    } catch (err) {
+        console.error("Error in loggedIn middleware:", err);
+        req.user = null;
+        req.polls = [];
+        next();
+    }
+};
+
+module.exports = loggedIn;

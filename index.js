@@ -1,22 +1,29 @@
-const express = require('express')
-const db = require('./routes/db-config')
-const app = express()
-const cookie = require('cookie-parser')
+const express = require('express');
+const db = require('./routes/db-config');
+const app = express();
+const cookie = require('cookie-parser');
 const PORT = process.env.PORT || 5000;
-app.use("/js", express.static(__dirname + "/public/js"))
-app.use("/css", express.static(__dirname + "/public/css"))
-app.set("view engine", "ejs")
-app.set("views", "./views")
-app.use(cookie())
-app.use(express.json())
-db.connect((err) => {
-    if(err) {
-        throw(err)
+
+app.use("/js", express.static(__dirname + "/public/js"));
+app.use("/css", express.static(__dirname + "/public/css"));
+app.set("view engine", "ejs");
+app.set("views", "./views");
+app.use(cookie());
+app.use(express.json());
+
+db.getConnection((err) => {
+    if (err) {
+        throw (err);
     }
-    console.log("DB is connected")
-})
+    console.log("DB is connected");
+});
 
+app.use("/", require("./routes/pages"));
+app.use("/api", require("./controllers/auth"));
 
-app.use("/", require("./routes/pages"))
-app.use("/api", require("./controllers/auth"))
-app.listen(PORT) 
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
+
+// Require the updateWinners script
+require('./controllers/updateWinners');

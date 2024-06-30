@@ -25,7 +25,6 @@ document.getElementById('form').addEventListener('submit', async function(event)
         errorElement.style.display = 'none';
         successElement.style.display = 'block';
         successElement.innerHTML = result.success;
-        // Redirect to the appropriate page based on the role
         setTimeout(() => {
             window.location.href = result.redirectUrl;
         }, 1000);

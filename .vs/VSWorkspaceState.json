@@ -5,7 +5,9 @@
     "\\public",
     "\\public\\css",
     "\\public\\js",
+    "\\routes",
     "\\views"
   ],
+  "SelectedNode": "\\public\\css\\analytics_styles.css",
   "PreviewInSolutionExplorer": false
 }
