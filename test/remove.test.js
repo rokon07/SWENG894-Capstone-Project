@@ -2,10 +2,9 @@ import { expect } from 'chai';
 import request from 'supertest';
 import sinon from 'sinon';
 import express from 'express';
-import removePoll from '../controllers/removePoll.js'; // Adjust the path as necessary
-import db from '../routes/db-config.js'; // Adjust the path as necessary
+import removePoll from '../controllers/removePoll.js'; 
+import db from '../routes/db-config.js';
 
-// Setup the express app for testing
 const app = express();
 app.use(express.json());
 app.post('/api/removePoll', removePoll);
