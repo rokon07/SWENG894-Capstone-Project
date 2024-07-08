@@ -25,5 +25,4 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-// Require the updateWinners script
 require('./controllers/updateWinners');

@@ -1,11 +1,11 @@
-body{
-    background-color: #161b22
+.navbar {
+    background-color: #0d1117;
 }
 
-#vote-button:hover{
-    background-color: yellow;
+h6 {
+    color: #ecf2f8;
 }
 
-.card-body {
-    color: white;
+select {
+    font-family: 'FontAwesome', 'Second Font name'
 }

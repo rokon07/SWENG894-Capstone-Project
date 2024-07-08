@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Democratic-Decisions</title>
     <link rel="stylesheet" href="/css/index_styles.css">
+    <script src="https://kit.fontawesome.com/1357e6d178.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .card {
             height: 100%;
@@ -101,104 +102,113 @@
 
 <% if (status == "loggedIn") { %>
     <div class="container my-7">
-        <div class="card" style="width: 100%;">
-            <div class="card-body">
-                <h5 class="card-title">Current ongoing polls</h5>
-                <br>
-                <% if (user.role == "admin") { %>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">View analytics on polls you manage. Click on the Green 'View Analytics' button to view Data analysis.</h6>
-                <% } else { %>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Vote on polls. Click on the Green 'Cast Vote' button to vote for candidates in the poll.</h6>
-                <% } %>
-                <% if (polls.length > 0) { %>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <% polls.forEach(poll => { %>
-                            <% if (user.role == "voter" || poll.admin_email == user.email) { %>
-                                <div class="col">
-                                    <div class="card h-100" data-poll-id="<%= poll.id %>">
-                                        <div class="card-body d-flex flex-column">
-                                            <h6><%= poll.title %></h6>
-                                            <p>Deadline Date: <%= new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' }) %></p>
-                                            <p>Time: <%= new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' }) %></p>
-                                            <%
-                                                function calculateAgeRequirement(birthdate) {
-                                                    const dob = new Date(birthdate);
-                                                    const today = new Date();
-                                                    let age = today.getFullYear() - dob.getFullYear();
-                                                    const m = today.getMonth() - dob.getMonth();
-                                                    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
-                                                        age--;
-                                                    }
-                                                    return age;
-                                                }
-                                            %>
-                                            <p>Age Requirement: <%= calculateAgeRequirement(poll.age_requirement) %> years</p>
-                                            <% if (poll.enable_anonymous == 1) { %>
-                                                <p>Anonymous voting: Enabled</p>
-                                            <% } %>
-                                            <p>Winner: <%= poll.winner ? poll.winner : 'Ongoing poll' %></p>
-                                            <% if (user.role == "admin") { %>
-                                                <% if (poll.poll_type === 'Private' && poll.code) { %>
-                                                    <p>Poll Code: <%= poll.code %></p>
-                                                <% } %>
-                                                <a href="/analytics/<%= poll.id %>" class="btn btn-success">View Analytics &nbsp;<i class="fa fa-line-chart" style="font-size:16px"></i></a>
-                                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="card" style="width: 100%;">
+    <div class="card-body">
+    <h5 class="card-title">Current ongoing polls</h5>
 
-                                            <% } else { %>
-                                                <% const today = new Date(); %>
-                                                <% const pollDate = new Date(poll.deadline); %>
-                                                <% if (pollDate > today) { %>
-                                                    <% if (calculateAgeRequirement(user.dob) >= calculateAgeRequirement(poll.age_requirement)) { %>
-                                                        <% if (poll.poll_type === 'Private' && poll.code) { %>
-                                                            <button class="btn btn-success mt-auto" onclick="showPollCodeInput('<%= poll.id %>')">Cast Vote &nbsp;<i class="fa fa-lock" style="font-size:16px"></i></button>
-                                                            <script>
-                                                            function hidePollCodeForm() {
-                                                                var url = "/";
-                                                                window.location.href = url;
-                                                            }
-                                                            
-                                                                const userId = "<%= user.id %>";
-                                                                const userEmail = "<%= user.email %>";
-                                                            </script>
-                                                            <script src="js/verify_poll.js"></script>
-                                                        <% } else { %>
-                                                            <form action="/vote" method="get" class="mt-auto">
-                                                                <input type="hidden" name="pollId" value="<%= poll.id %> ">
-                                                                <input type="hidden" name="userId" value="<%= user.id %>">
-                                                                <input type="hidden" name="userEmail" value="<%= user.email %>">
-                                                                <button type="submit" class="btn btn-success mt-auto" style="width: 100%;">Cast Vote <i class="fa fa-unlock" style="font-size:16px"></i></button>
-                                                            </form>
-                                                        <% } %>
-                                                    <% } else { %>
-                                                        <button type="submit" class="btn btn-danger mt-auto">Age restriction &nbsp;<i class="fa fa-ban" style="font-size:16px"></i></button>
-                                                    <% } %>
-                                                <% } else { %>
-                                                    <button type="submit" class="btn btn-secondary mt-auto">Ended &nbsp;<i class="fa fa-hourglass-end" style="font-size:16px"></i></button>
-                                                <% } %>
-                                            <% } %>
-                                        </div>
-                                    </div>
-                                </div>
-                            <% } %>
-                        <% }) %>
-                    </div>
-                <% } else { %>
-                    <p>No ongoing polls available.</p>
-                <% } %>
+        <% if (user.role == "admin") { %>
+            <h6 class="card-subtitle mb-2 text-body-secondary">View analytics on polls you manage. Click on the Green 'View Analytics' button to view Data analysis.</h6>
+        <% } else { %>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Vote on polls. Click on the Green 'Cast Vote' button to vote for candidates in the poll.</h6>
+        <% } %>
+        <br>
+        <div class="d-flex justify-content-between" width: auto;">
+            <div>
+                <div style="display: flex;">
+                    <input type="text" id="searchInput" class="form-control" placeholder=" Search by name ..." style="display: flex;">
+                </div>
+                <select id="sortOptions" class="form-select" style="width: auto;">
+                    <option value="nameAsc">Sort by Name (Ascending)</option>
+
+                    <option value="nameDesc">Sort by Name (Descending)</option>
+
+                    <option value="deadlineAsc">Sort by Deadline (Ascending)</option>
+                    <option value="deadlineDesc">Sort by Deadline (Descending)</option>
+                </select>
             </div>
         </div>
+
+        <br>
+        <% if (polls.length > 0) { %>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="pollsContainer">
+                <% polls.forEach(poll => { %>
+                    <% if (user.role == "voter" || poll.admin_email == user.email) { %>
+                        <div class="col poll-item">
+                            <div class="card h-100" data-poll-id="<%= poll.id %>">
+                                <div class="card-body d-flex flex-column">
+                                    <h6 class="poll-title"><%= poll.title %></h6>
+                                    <p>Deadline Date: <%= new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' }) %></p>
+                                    <p>Time: <%= new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' }) %></p>
+                                    <%
+                                        function calculateAgeRequirement(birthdate) {
+                                            const dob = new Date(birthdate);
+                                            const today = new Date();
+                                            let age = today.getFullYear() - dob.getFullYear();
+                                            const m = today.getMonth() - dob.getMonth();
+                                            if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+                                                age--;
+                                            }
+                                            return age;
+                                        }
+                                    %>
+                                    <p>Age Requirement: <%= calculateAgeRequirement(poll.age_requirement) %> years</p>
+                                    <% if (poll.enable_anonymous == 1) { %>
+                                        <p>Anonymous voting: Enabled</p>
+                                    <% } %>
+                                    <p>Winner: <%= poll.winner ? poll.winner : 'Ongoing poll' %></p>
+                                    <% if (user.role == "admin") { %>
+                                        <% if (poll.poll_type === 'Private' && poll.code) { %>
+                                            <p>Poll Code: <%= poll.code %></p>
+                                        <% } %>
+                                        <a href="/analytics/<%= poll.id %>" class="btn btn-success">View Analytics &nbsp;<i class="fa fa-line-chart" style="font-size:16px"></i></a>
+                                    <% } else { %>
+                                        <% const today = new Date(); %>
+                                        <% const pollDate = new Date(poll.deadline); %>
+                                        <% if (pollDate > today) { %>
+                                            <% if (calculateAgeRequirement(user.dob) >= calculateAgeRequirement(poll.age_requirement)) { %>
+                                                <% if (poll.poll_type === 'Private' && poll.code) { %>
+                                                    <button class="btn btn-success mt-auto" onclick="showPollCodeInput('<%= poll.id %>')">Cast Vote &nbsp;<i class="fa fa-lock" style="font-size:16px"></i></button>
+                                                    <script>
+                                                    function hidePollCodeForm() {
+                                                        var url = "/";
+                                                        window.location.href = url;
+                                                    }
+                                                    
+                                                        const userId = "<%= user.id %>";
+                                                        const userEmail = "<%= user.email %>";
+                                                    </script>
+                                                    <script src="js/verify_poll.js"></script>
+                                                <% } else { %>
+                                                    <form action="/vote" method="get" class="mt-auto">
+                                                        <input type="hidden" name="pollId" value="<%= poll.id %> ">
+                                                        <input type="hidden" name="userId" value="<%= user.id %>">
+                                                        <input type="hidden" name="userEmail" value="<%= user.email %>">
+                                                        <button type="submit" class="btn btn-success mt-auto" style="width: 100%;">Cast Vote <i class="fa fa-unlock" style="font-size:16px"></i></button>
+                                                    </form>
+                                                <% } %>
+                                            <% } else { %>
+                                                <button type="submit" class="btn btn-danger mt-auto">Age restriction &nbsp;<i class="fa fa-ban" style="font-size:16px"></i></button>
+                                            <% } %>
+                                        <% } else { %>
+                                            <button type="submit" class="btn btn-secondary mt-auto">Ended &nbsp;<i class="fa fa-hourglass-end" style="font-size:16px"></i></button>
+                                        <% } %>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                <% }) %>
+            </div>
+        <% } else { %>
+            <p>No ongoing polls available.</p>
+        <% } %>
+        </div>
+</div>
     </div>
 <% } %>
 
-<script>
-    const userId = "<%= user.id %>";
-    const userEmail = "<%= user.email %>";
-    const urlParams = new URLSearchParams(window.location.search);
-    const errorMsg = urlParams.get('error');
-    if (errorMsg) {
-        alert(errorMsg);
-    }
-</script>
+
+<script src="js/search_sort.js"></script>
 <script src="js/verify_poll.js"></script>
 </body>
 </html>

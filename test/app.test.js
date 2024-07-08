@@ -3,7 +3,6 @@ import jwt from 'jsonwebtoken';
 import { expect } from 'chai';
 import express from 'express';
 
-// Use dynamic import to load the app
 let app;
 
 before(async () => {

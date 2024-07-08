@@ -6,8 +6,9 @@
     "\\public\\css",
     "\\public\\js",
     "\\routes",
+    "\\test",
     "\\views"
   ],
-  "SelectedNode": "\\public\\css\\analytics_styles.css",
+  "SelectedNode": "\\views\\index.ejs",
   "PreviewInSolutionExplorer": false
 }
