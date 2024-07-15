@@ -51,8 +51,8 @@ document.getElementById('sortOptions').addEventListener('change', function () {
     const comparator = (a, b) => {
         const pollA = a.querySelector('.poll-title').innerText;
         const pollB = b.querySelector('.poll-title').innerText;
-        const deadlineA = new Date(a.querySelector('p:nth-of-type(1)').innerText);
-        const deadlineB = new Date(b.querySelector('p:nth-of-type(1)').innerText);
+        const deadlineA = new Date(a.querySelector('.card-data-legend-value').innerText);
+        const deadlineB = new Date(b.querySelector('.card-data-legend-value').innerText);
 
         if (sortOption === 'nameAsc') {
             return pollA.localeCompare(pollB);

@@ -39,7 +39,7 @@ const pollAnalytics = async (req, res) => {
             pollVotes,
             timeSeriesData,
             genderData: genderCounts,
-            raceData: raceCounts
+            raceData: raceCounts,
         });
     } catch (error) {
         console.error("Error fetching poll analytics:", error);

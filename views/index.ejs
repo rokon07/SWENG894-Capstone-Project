@@ -14,201 +14,231 @@
         }
     </style>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Democratic-Decisions</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
+<body class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Democratic-Decisions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <% if (status == "loggedIn") { %>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                    <% } else { %>
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 24px; margin-bottom: 24px;">
+        <div class="card" style="width: 100%; background-color: #21262d;">
+            <div class="card-body" style="color: #ecf2f8;">
                 <% if (status == "loggedIn") { %>
-                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                    <% if (user.role == "admin") { %>
+                        <h5 class="card-title">Welcome <%= user.fname %> <%= user.lname %> (Admin)</h5>
+                        <h6 class="card-title">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                        <p class="card-text">Create a poll or view analytics on existing polls.</p>
+                        <form onsubmit="return false;" id="create_poll">
+                            <button onclick="document.location='/poll?<%=user.email%>'" class="btn btn-primary">Create a poll</button>
+                        </form>
+                     <% } else { %>
+                        <h5 class="card-title">Welcome <%= user.fname %> <%= user.lname %> (Voter)</h5>
+                        <h6 class="card-subtitle mb-2">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                     <% } %>
                 <% } else { %>
-                    <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <h5 class="card-title">Welcome to the Democratic-Decisions web application</h5>
+                    <br>
+                    <h6 class="card-subtitle">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                    <br>
+                    <p class="card-text">Login to get started. If you are not a user, start registration.</p>
+                    <a class="btn btn-success" href="/login" style="color: white; text-decoration: none;">
+                        Login &nbsp;<i class="fas fa-sign-in-alt" style="font-size:16px"></i>
+                    </a>
+                    &nbsp;
+                    <a class="btn btn-primary" href="/register" style="color: white; text-decoration: none;">
+                        Register &nbsp;<i class="fa fa-user-plus" style="font-size:16px"></i>
+                     </a>
                 <% } %>
-            </ul>
+            </div>
         </div>
     </div>
-</nav>
-<div class="container my-5">
-    <div class="card" style="width: 100%;">
-        <div class="card-body">
-            <% if (status == "loggedIn") { %>
-                <% if (user.role == "admin") { %>
-                    <h5 class="card-title">Welcome <%= user.fname %> <%= user.lname %> (Admin)</h5>
-                    <br>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
-                    <p class="card-text">Create a poll or view analytics on existing polls.</p>
-                    <form onsubmit="return false;" id="create_poll">
-                        <button onclick="document.location='/poll?<%=user.email%>'" class="btn btn-primary">Create a poll</button>
-                    </form>
-                <% } else { %>
-                    <h5 class="card-title">Welcome <%= user.fname %> <%= user.lname %> (Voter)</h5>
-                    <br>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
-                    <br>
-                    <p class="card-text">Below you can see the list of ongoing polls.</p>
-                <% } %>
-            <% } else { %>
-                <h5 class="card-title">Welcome to the Democratic-Decisions web application</h5>
-                <br>
-                <h6 class="card-subtitle mb-2 text-body-secondary">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
-                <br>
-                <p class="card-text">Login to get started. If you are not a user start registration.</p>
-                <button class="btn btn-primary"><a href="/login" style="color: white; text-decoration: none;">Login</a></button>
-                <button class="btn btn-primary"><a href="/register" style="color: white; text-decoration: none;">Register</button>
-            <% } %>
-        </div>
-    </div>
-</div>
 
-<% if (status == "loggedIn") { %>
-    <% if (user.role == "admin") { %>
-        <div class="container my-6">
-            <div class="card" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">Remove Poll</h5>
-                    <form onsubmit="return false;" id="remove_poll">
-                        <label for="pollSelect">Select a poll to remove:</label>
-                        <select id="pollSelect" class="form-select mb-3">
-                            <% polls.forEach(poll => { %>
-                                <% if (user.email == poll.admin_email) { %>
-                                    <option value="<%= poll.id %>"><%= poll.title %></option>
-                                <% } %>
-                            <% }) %>
+    <% if (status == "loggedIn") { %>
+        <% if (user.role == "admin") { %>
+            <div class="container">
+                <div class="card" style="width: 100%; background-color: #21262d;">
+                    <div class="card-body" style="color: #ecf2f8;">
+                        <h6 class="card-title">Remove Poll</h6>
+                        <form onsubmit="return false;" id="remove_poll">
+                                <label for="pollSelect">Select a poll to remove:</label>
+                                <select id="pollSelect" class="form-select mb-3">
+                                <% polls.forEach(poll => { %>
+                                    <% if (user.email == poll.admin_email) { %>
+                                        <option value="<%= poll.id %>"><%= poll.title %></option>
+                                    <% } %>
+                                <% }) %>
                         </select>
                         <button class="btn btn-danger" onclick="removePoll()">Delete Poll</button>
                         <br>
                         <div class="alert alert-danger" role="alert" id="error" style="display:none;">
+                            <br>
                             There was an error deleting the poll!
                         </div>
                         <div class="alert alert-success" role="alert" id="success" style="display:none;">
+                            <br>
                             The poll has been deleted!
+                            <br>
                         </div>
-                    </form>
+                        </form>
                 </div>
             </div>
         </div>
-        <script src="js/remove_poll.js"></script>
-        <br>
+    <script src="js/remove_poll.js"></script>
+    <br>
     <% } %>
-<% } %>
+    <% } %>
 
-<% if (status == "loggedIn") { %>
-    <div class="container my-7">
-    <div class="card" style="width: 100%;">
-    <div class="card-body">
-    <h5 class="card-title">Current ongoing polls</h5>
+    <% if (status == "loggedIn") { %>
+    <div class="container">
+        <div class="card" style="width: 100%; background-color: #21262d;">
+            <div class="card-body" style="color: #ecf2f8;">
+                <h6 class="card-title">Current ongoing polls</h6>
 
-        <% if (user.role == "admin") { %>
-            <h6 class="card-subtitle mb-2 text-body-secondary">View analytics on polls you manage. Click on the Green 'View Analytics' button to view Data analysis.</h6>
-        <% } else { %>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Vote on polls. Click on the Green 'Cast Vote' button to vote for candidates in the poll.</h6>
-        <% } %>
-        <br>
-        <div class="d-flex justify-content-between" width: auto;">
-            <div>
-                <div style="display: flex;">
-                    <input type="text" id="searchInput" class="form-control" placeholder=" Search by name ..." style="display: flex;">
-                </div>
-                <select id="sortOptions" class="form-select" style="width: auto;">
-                    <option value="nameAsc">Sort by Name (Ascending)</option>
-
-                    <option value="nameDesc">Sort by Name (Descending)</option>
-
-                    <option value="deadlineAsc">Sort by Deadline (Ascending)</option>
-                    <option value="deadlineDesc">Sort by Deadline (Descending)</option>
-                </select>
-            </div>
-        </div>
-
-        <br>
-        <% if (polls.length > 0) { %>
-            <div class="row row-cols-1 row-cols-md-3 g-4" id="pollsContainer">
-                <% polls.forEach(poll => { %>
-                    <% if (user.role == "voter" || poll.admin_email == user.email) { %>
-                        <div class="col poll-item">
-                            <div class="card h-100" data-poll-id="<%= poll.id %>">
+                <% if (user.role == "admin") { %>
+                    <h6 class="card-subtitle mb-2">View analytics on polls you manage. Click on the Green 'View Analytics' button to view Data analysis.</h6>
+                <% } else { %>
+                    <h6 class="card-subtitle mb-2">Vote on polls. Click on the Green 'Cast Vote' button to vote for candidates in the poll.</h6>
+                <% } %>
+                <br>
+                    <div>
+                        <input type="text" id="searchInput" class="form-control" placeholder=" Search polls by name ...">
+                        &nbsp;
+                        <select id="sortOptions" class="form-select">
+                            <option value="nameAsc">Sort by Name (Ascending)</option>
+                            <option value="nameDesc">Sort by Name (Descending)</option>
+                            <option value="deadlineAsc">Sort by Deadline (Ascending)</option>
+                            <option value="deadlineDesc">Sort by Deadline (Descending)</option>
+                        </select>
+                    </div>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between" style="min-width: auto;">
+                    <% if (polls.length > 0) { %>
+                    <div class="row row-cols-1 row-cols-md-3 g-4" id="pollsContainer">
+                        <% polls.forEach(poll => { %>
+                        <% if (user.role == "voter" || poll.admin_email == user.email) { %>
+                        <div class="col poll-item" style="min-width: auto;">
+                            <div class="card h-100" data-poll-id="<%= poll.id %>" style="background-color: #161b22; color: #ecf2f8; border: none;">
                                 <div class="card-body d-flex flex-column">
-                                    <h6 class="poll-title"><%= poll.title %></h6>
-                                    <p>Deadline Date: <%= new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' }) %></p>
-                                    <p>Time: <%= new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' }) %></p>
+                                    <div style="border-bottom: solid 2px #21262d; margin-bottom: 10px;">
+                                        <h6 class="poll-title"><%= poll.title %></h6>
+                                    </div>
+
+                                    <div class="card-data">
+                                        <p class="card-data-legend"> Deadline Date: </p>
+                                        <p class="card-data-legend-value"><%= new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' }) %></p>
+                                    </div>
+
+                                    <div class="card-data">
+                                        <p class="card-data-legend"> Time: </p>
+                                        <p class="card-data-legend-value"><%= new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' }) %></p>
+                                    </div>
+
                                     <%
-                                        function calculateAgeRequirement(birthdate) {
-                                            const dob = new Date(birthdate);
-                                            const today = new Date();
-                                            let age = today.getFullYear() - dob.getFullYear();
-                                            const m = today.getMonth() - dob.getMonth();
-                                            if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
-                                                age--;
-                                            }
-                                            return age;
-                                        }
+                                    function calculateAgeRequirement(birthdate) {
+                                    const dob = new Date(birthdate);
+                                    const today = new Date();
+                                    let age = today.getFullYear() - dob.getFullYear();
+                                    const m = today.getMonth() - dob.getMonth();
+                                    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+                                    age--;
+                                    }
+                                    return age;
+                                    }
                                     %>
-                                    <p>Age Requirement: <%= calculateAgeRequirement(poll.age_requirement) %> years</p>
-                                    <% if (poll.enable_anonymous == 1) { %>
-                                        <p>Anonymous voting: Enabled</p>
-                                    <% } %>
-                                    <p>Winner: <%= poll.winner ? poll.winner : 'Ongoing poll' %></p>
+
+                                    <div class="card-data">
+                                        <p class="card-data-legend"> Age Requirement: </p>
+                                        <p class="card-data-legend-value"><%= calculateAgeRequirement(poll.age_requirement) %></p>
+                                        <p class="card-data-legend-value"> years</p>
+                                    </div>
+
+                                    <div class="card-data">
+                                        <% if (poll.enable_anonymous == 1) { %>
+                                        <p class="card-data-legend">Anonymous voting:</p>
+                                        <p class="card-data-legend-value">Enabled</p>
+                                        <% } %>
+                                    </div>
+
+                                    <div class="card-data">
+                                        <p class="card-data-legend"> Winner: </p>
+                                        <p class="card-data-legend-value"><%= poll.winner ? poll.winner : 'Result Pending' %></p>
+                                    </div>
+
                                     <% if (user.role == "admin") { %>
                                         <% if (poll.poll_type === 'Private' && poll.code) { %>
-                                            <p>Poll Code: <%= poll.code %></p>
+                                            <div class="card-data">
+                                                <p class="card-data-legend">Poll Code: </p>
+                                                <p class="card-data-legend-value"><%= poll.code %></p>
+                                            </div>
                                         <% } %>
-                                        <a href="/analytics/<%= poll.id %>" class="btn btn-success">View Analytics &nbsp;<i class="fa fa-line-chart" style="font-size:16px"></i></a>
+
+                                        <a href="/analytics/<%= poll.id %>" class="btn btn-success">View Analytics &nbsp;<i class="fa fa-line-chart" style="font-size:16px;"></i></a>
                                     <% } else { %>
-                                        <% const today = new Date(); %>
-                                        <% const pollDate = new Date(poll.deadline); %>
-                                        <% if (pollDate > today) { %>
-                                            <% if (calculateAgeRequirement(user.dob) >= calculateAgeRequirement(poll.age_requirement)) { %>
-                                                <% if (poll.poll_type === 'Private' && poll.code) { %>
-                                                    <button class="btn btn-success mt-auto" onclick="showPollCodeInput('<%= poll.id %>')">Cast Vote &nbsp;<i class="fa fa-lock" style="font-size:16px"></i></button>
-                                                    <script>
-                                                    function hidePollCodeForm() {
-                                                        var url = "/";
-                                                        window.location.href = url;
-                                                    }
-                                                    
-                                                        const userId = "<%= user.id %>";
-                                                        const userEmail = "<%= user.email %>";
-                                                    </script>
-                                                    <script src="js/verify_poll.js"></script>
-                                                <% } else { %>
-                                                    <form action="/vote" method="get" class="mt-auto">
-                                                        <input type="hidden" name="pollId" value="<%= poll.id %> ">
-                                                        <input type="hidden" name="userId" value="<%= user.id %>">
-                                                        <input type="hidden" name="userEmail" value="<%= user.email %>">
-                                                        <button type="submit" class="btn btn-success mt-auto" style="width: 100%;">Cast Vote <i class="fa fa-unlock" style="font-size:16px"></i></button>
-                                                    </form>
-                                                <% } %>
-                                            <% } else { %>
-                                                <button type="submit" class="btn btn-danger mt-auto">Age restriction &nbsp;<i class="fa fa-ban" style="font-size:16px"></i></button>
-                                            <% } %>
-                                        <% } else { %>
-                                            <button type="submit" class="btn btn-secondary mt-auto">Ended &nbsp;<i class="fa fa-hourglass-end" style="font-size:16px"></i></button>
-                                        <% } %>
+                                    <% const today = new Date(); %>
+                                    <% const pollDate = new Date(poll.deadline); %>
+                                    <% if (pollDate > today) { %>
+                                    <% if (calculateAgeRequirement(user.dob) >= calculateAgeRequirement(poll.age_requirement)) { %>
+                                    <% if (poll.poll_type === 'Private' && poll.code) { %>
+                                    <button class="btn btn-warning mt-auto" onclick="showPollCodeInput('<%= poll.id %>')">Cast Vote &nbsp;<i class="fa fa-lock" style="font-size:16px"></i></button>
+                                    <script>
+                                        function hidePollCodeForm() {
+                                            var url = "/";
+                                            window.location.href = url;
+                                        }
+
+                                        const userId = "<%= user.id %>";
+                                        const userEmail = "<%= user.email %>";
+                                    </script>
+                                    <script src="js/verify_poll.js"></script>
+                                    <% } else { %>
+                                    <form action="/vote" method="get" class="mt-auto">
+                                        <input type="hidden" name="pollId" value="<%= poll.id %> ">
+                                        <input type="hidden" name="userId" value="<%= user.id %>">
+                                        <input type="hidden" name="userEmail" value="<%= user.email %>">
+                                        <button type="submit" class="btn btn-success mt-auto" style="width: 100%;">Cast Vote <i class="fa fa-unlock" style="font-size:16px"></i></button>
+                                    </form>
+                                    <% } %>
+                                    <% } else { %>
+                                        <button type="submit" class="btn btn-danger mt-auto">Age restriction &nbsp;<i class="fa fa-ban" style="font-size:16px"></i></button>
+                                    <% } %>
+                                    <% } else { %>
+                                        <button type="submit" class="btn btn-secondary mt-auto">Ended &nbsp;<i class="fa fa-hourglass-end" style="font-size:16px"></i></button>
+                                    <% } %>
                                     <% } %>
                                 </div>
                             </div>
                         </div>
+                        <% } %>
+                        <% }) %>
+                    </div>
+                    <% } else { %>
+                    <p>No ongoing polls available.</p>
                     <% } %>
-                <% }) %>
+                </div>
             </div>
-        <% } else { %>
-            <p>No ongoing polls available.</p>
-        <% } %>
         </div>
-</div>
-    </div>
-<% } %>
+        </div>
+        <% } %>
 
 
-<script src="js/search_sort.js"></script>
-<script src="js/verify_poll.js"></script>
+        <script src="js/search_sort.js"></script>
+        <script src="js/verify_poll.js"></script>
 </body>
 </html>

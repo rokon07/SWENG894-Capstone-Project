@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const poll = data.poll;
             pollTitleElement.textContent = poll.title;
             pollDetailsElement.innerHTML = `
-                Deadline Date: ${new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' })}<br>
-                Time: ${new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' })}<br>
-                Age Requirement: ${calculateAgeRequirement(poll.age_requirement)} years
+                Deadline Date: <a style="color: #89929b">${new Date(poll.deadline).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: '2-digit', year: 'numeric' })}</a><br>
+                Time: <a style="color: #89929b">${new Date(poll.deadline).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZoneName: 'long' })}</a><br>
+                Age Requirement: <a style="color: #89929b">${calculateAgeRequirement(poll.age_requirement)} years</a>
             `;
             fetch(`/polls/${pollId}/candidates`)
                 .then(response => response.json())

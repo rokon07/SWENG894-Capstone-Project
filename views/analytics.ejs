@@ -16,8 +16,8 @@
     <script type="application/json" id="raceData"><%- JSON.stringify(raceData) %></script>
     <script src="/js/poll_analytics.js"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="background-color:#161b22;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Democratic-Decisions</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +28,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container my-5">
-        <div class="card" id="main" style="width: 100%;">
+    <div class="container">
+        <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
                 <h5 class="card-title">Poll analytics for: <%= poll.title %></h5>
                 <p class="card-text">Below you can see a few different helpful charts. The charts provide in-depth analysis of polling data.</p>
@@ -69,15 +70,27 @@
             </div>
         </div>
     </div>
-    <div class="container my-6">
-        <div class="card" id="main" style="width: 100%;">
+    <div class="container">
+        <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
                 <h5 class="card-title">Poll bar chart for: <%= poll.title %></h5>
                 <canvas id="pollChart"></canvas>
             </div>
         </div>
     </div>
-    <div class="container my-6">
+    <div class="container">
+        <div class="card" id="main" style="background-color: #21262d; color: #ecf2f8;">
+            <div class="card-body">
+                <h5 class="card-title">Poll gender distribution chart for: <%= poll.title %></h5>
+                <canvas id="genderChart"></canvas>
+            </div>
+            <div class="card-body" style="background-color: #21262d; color: #ecf2f8;">
+                <h5 class="card-title">Poll race distribution chart for: <%= poll.title %></h5>
+                <canvas id="raceChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="container">
         <div class="card" id="main" style="width: 100%;">
             <div class="card-body">
                 <h5 class="card-title">Poll time series chart for: <%= poll.title %></h5>
@@ -85,17 +98,6 @@
             </div>
         </div>
     </div>
-    <div class="container my-6">
-        <div class="card" id="main" style="width: 100%; display: grid;">
-            <div class="card-body1" style="width: 50%;">
-                <h5 class="card-title">Poll gender distribution chart for: <%= poll.title %></h5>
-                <canvas id="genderChart"></canvas>
-            </div>
-            <div class="card-body2" style="width: 50%;">
-                <h5 class="card-title">Poll race distribution chart for: <%= poll.title %></h5>
-                <canvas id="raceChart"></canvas>
-            </div>
-        </div>
-    </div>
+    
 </body>
 </html>
