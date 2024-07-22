@@ -10,7 +10,6 @@ const db = await import('../routes/db-config.js');
 const poll = await import('../controllers/poll.js');
 import express from 'express';
 
-// Setup the express app for testing
 const app = express();
 app.use(express.json());
 app.post('/api/poll', poll.default);
@@ -32,7 +31,6 @@ describe('POST /api/poll', () => {
             .send({
                 title: 'Test Poll',
                 admin_email: 'admin@example.com',
-                // Missing deadline, age, and candidates
             })
             .expect(200)
             .end((err, res) => {
@@ -47,7 +45,6 @@ describe('POST /api/poll', () => {
         const pollId = 1;
         const candidates = ['Candidate 1', 'Candidate 2'];
 
-        // Mock the database insert responses
         dbQueryStub.onFirstCall().resolves([{ insertId: pollId }]);
         dbQueryStub.onSecondCall().resolves();
 
@@ -78,7 +75,6 @@ describe('POST /api/poll', () => {
 
         sinon.stub(crypto, 'randomBytes').returns(Buffer.from('abc123'));
 
-        // Mock the database insert responses
         dbQueryStub.onFirstCall().resolves([{ insertId: pollId }]);
         dbQueryStub.onSecondCall().resolves();
 
@@ -104,7 +100,6 @@ describe('POST /api/poll', () => {
     });
 
     it('should handle internal server errors', (done) => {
-        // Mock a database error
         dbQueryStub.rejects(new Error('Database error'));
 
         request(app)

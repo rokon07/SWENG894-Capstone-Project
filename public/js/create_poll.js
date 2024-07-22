@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         candidateDiv.id = `candidateDiv_${candidateCount}`;
         candidateDiv.innerHTML = `
             <label for="candidate_${candidateCount}" class="form-label">Option ${candidateCount}</label>
-            <input type="text" class="form-control" id="candidate_${candidateCount}" autocomplete="off" required>
+            <input type="text" class="form-control" id="candidate_${candidateCount}" autocomplete="off" placeholder="Enter poll candidate name ..." required>
             <button type="button" class="btn btn-danger mt-2" onclick="removeCandidate(${candidateCount})">Remove Option</button>
         `;
         document.getElementById('candidates').appendChild(candidateDiv);

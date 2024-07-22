@@ -1,0 +1,7 @@
+.navbar {
+    background-color: #0d1117;
+}
+
+::placeholder {
+    color: red;
+}

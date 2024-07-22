@@ -1,11 +1,34 @@
-body{
-    background-color: #161b22
+.main {
+    background-color: #161b22;
 }
 
-#vote-button:hover{
-    background-color: yellow;
+.navbar {
+    background-color: #0d1117;
 }
 
-.card-body {
-    color: white;
+.container.card-body{
+    background-color: #21262d;
+}
+
+select {
+    font-family: 'FontAwesome', 'Second Font name'
+}
+
+.poll-item:hover {
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+}
+
+.card-data {
+    margin-bottom: 10px;
+}
+
+.card-data-legend {
+    display: inline;
+}
+
+.card-data-legend-value {
+    display: inline;
+    color: #89929b;
 }

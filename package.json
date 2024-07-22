@@ -11,13 +11,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.3",
     "chartjs-adapter-date-fns": "^3.0.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "font-awesome": "^4.7.0",
     "jsonwebtoken": "^9.0.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.10.1",
@@ -26,7 +29,7 @@
   "devDependencies": {
     "chai": "^5.1.1",
     "mocha": "^10.5.2",
-    "supertest": "^7.0.0",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "supertest": "^7.0.0"
   }
 }

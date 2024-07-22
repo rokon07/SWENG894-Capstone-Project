@@ -4,7 +4,7 @@ const removePoll = async (req, res) => {
     const { pollId } = req.body;
 
     if (!pollId) {
-        return res.json({ status: "error", error: "Poll ID is required." });
+        return res.json({ status: "error", error: "You have no ongoing polls to delete!" });
     }
 
     try {
