@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const backgroundColors = [
-        'rgba(75, 192, 192, 0.2)', 'rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'
-    ];
-    const borderColors = [
-        'rgba(75, 192, 192, 1)', 'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'
+    const colors_list = [
+        '#faa356', '#7ce38b', '#a2d2fb', '#fa7970', '#77bdfb', '#cea5fb', '#c6cdd5', '#FF204E', '#78A083'
     ];
 
     try {
@@ -11,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const timeSeriesData = JSON.parse(document.getElementById('timeSeriesData').textContent);
         const genderData = JSON.parse(document.getElementById('genderData').textContent);
         const raceData = JSON.parse(document.getElementById('raceData').textContent);
+        const ageGroupData = JSON.parse(document.getElementById('ageGroupData').textContent);
+        const raceCandidateVotesData = JSON.parse(document.getElementById('raceCandidateVotesData').textContent);
 
         const labels = pollResults.map(result => result.name);
         const data = pollResults.map(result => result.votes);
@@ -23,20 +22,54 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Votes',
                     data: data,
-                    backgroundColor: backgroundColors,
-                    borderColor: borderColors,
-                    borderWidth: 1
+                    backgroundColor: colors_list,
+                    hoverOffset: 4
                 }]
             },
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Votes',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Candidates',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
                     }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
                 }
             }
         });
 
+        /*
         const timeLabels = timeSeriesData.map(result => new Date(result.vote_time).toLocaleString());
         const timeData = timeSeriesData.map(result => result.votes);
 
@@ -49,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     label: 'Votes Over Time',
                     data: timeData,
                     fill: false,
-                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderColor: colors_list,
                     tension: 0.1
                 }]
             },
@@ -66,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             }
-        });
+        }); */
 
         const genderLabels = Object.keys(genderData);
         const genderCounts = Object.values(genderData);
@@ -79,9 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Gender Distribution',
                     data: genderCounts,
-                    backgroundColor: backgroundColors,
-                    borderColor: borderColors,
-                    borderWidth: 1
+                    backgroundColor: colors_list,
+                    borderWidth: 0,
+                    fontColor: "#161b22"
                 }]
             }
         });
@@ -97,10 +130,132 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{
                     label: 'Race Distribution',
                     data: raceCounts,
-                    backgroundColor: backgroundColors,
-                    borderColor: borderColors,
-                    borderWidth: 1
+                    backgroundColor: colors_list,
+                    borderWidth: 0
                 }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                },
+                
+            },
+        });
+
+        const ageGroupLabels = Object.keys(ageGroupData);
+        const ageGroupCounts = Object.values(ageGroupData);
+
+        const ctx5 = document.getElementById('ageGroupChart').getContext('2d');
+        const ageGroupChart = new Chart(ctx5, {
+            type: 'bar',
+            data: {
+                labels: ageGroupLabels,
+                datasets: [{
+                    label: 'Age Group Distribution',
+                    data: ageGroupCounts,
+                    backgroundColor: colors_list,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Votes',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Age Group',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                }
+            }
+        });
+
+        const raceCandidateLabels = Object.keys(raceCandidateVotesData);
+        const datasets = pollResults.map((candidate, index) => {
+            const candidateData = raceCandidateLabels.map(race => raceCandidateVotesData[race][candidate.id] || 0);
+            return {
+                label: candidate.name,
+                data: candidateData,
+                backgroundColor: colors_list[index % colors_list.length],
+            };
+        });
+
+        const ctx6 = document.getElementById('raceCandidateChart').getContext('2d');
+        const raceCandidateChart = new Chart(ctx6, {
+            type: 'bar',
+            data: {
+                labels: raceCandidateLabels,
+                datasets: datasets
+            },
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    y: {
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Race/Ethnicity',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    },
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            color: "#161b22"
+                        },
+                        ticks: {
+                            color: "#89929b"
+                        },
+                        title: {
+                            display: true,
+                            text: 'Votes',
+                            color: '#ecf2f8',
+                            font: {
+                                size: 14
+                            }
+                        }
+                    }
+                }
             }
         });
 

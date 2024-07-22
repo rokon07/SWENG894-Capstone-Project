@@ -9,6 +9,6 @@
     "\\test",
     "\\views"
   ],
-  "SelectedNode": "\\views\\index.ejs",
+  "SelectedNode": "\\controllers\\updateWinners.js",
   "PreviewInSolutionExplorer": false
 }
