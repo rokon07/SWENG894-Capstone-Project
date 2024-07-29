@@ -2,10 +2,10 @@
   "name": "sweng894-capstone-project",
   "version": "1.0.0",
   "description": "Capstone Project for SWENG 894. Vote management system web application",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "mocha --loader ts-node/esm --exit",
-    "coverage": "nyc --reporter=html --reporter=text mocha --loader ts-node/esm --exit"
+    "test": "mocha",
+    "test-with-coverage": "nyc --reporter=text mocha"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,7 @@
     "chai": "^5.1.1",
     "mocha": "^10.5.2",
     "nyc": "^15.1.0",
+    "sinon": "^18.0.0",
     "supertest": "^7.0.0"
   }
 }
