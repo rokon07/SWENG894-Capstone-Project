@@ -69,38 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        /*
-        const timeLabels = timeSeriesData.map(result => new Date(result.vote_time).toLocaleString());
-        const timeData = timeSeriesData.map(result => result.votes);
-
-        const ctx2 = document.getElementById('timeSeriesChart').getContext('2d');
-        const timeSeriesChart = new Chart(ctx2, {
-            type: 'line',
-            data: {
-                labels: timeLabels,
-                datasets: [{
-                    label: 'Votes Over Time',
-                    data: timeData,
-                    fill: false,
-                    borderColor: colors_list,
-                    tension: 0.1
-                }]
-            },
-            options: {
-                scales: {
-                    x: {
-                        type: 'time',
-                        time: {
-                            unit: 'hour'
-                        }
-                    },
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        }); */
-
         const genderLabels = Object.keys(genderData);
         const genderCounts = Object.values(genderData);
 
