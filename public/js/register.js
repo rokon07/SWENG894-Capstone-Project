@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
+        const retypePassword = document.getElementById('retype-password').value;
         const phone = document.getElementById('phone').value;
         const fname = document.getElementById('fname').value;
         const lname = document.getElementById('lname').value;
@@ -42,6 +43,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             return;
         }
 
+        // Retype Password validation: ensure it matches the original password
+        if (password !== retypePassword) {
+            errorElement.style.display = 'block';
+            errorElement.innerText = 'Please ensure the retyped password is the same!';
+            return;
+        }
+
         // Phone number validation: ensure it is exactly 10 digits
         if (!/^\d{10}$/.test(phone)) {
             errorElement.style.display = 'block';
@@ -50,7 +58,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
 
         // First name and last name validation: ensure only alphabetic characters
-        if (!/^[a-zA-Z]+$/.test(fname)) {
+        if (!/^[a-zA-Z]+$/.test(fname)) { 
             errorElement.style.display = 'block';
             errorElement.innerText = 'First name must contain only alphabetic characters.';
             return;

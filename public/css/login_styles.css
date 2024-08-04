@@ -5,3 +5,24 @@
 ::placeholder {
     color: red;
 }
+
+.footer {
+    background-color: #0d1117;
+    color: #89929b;
+    padding-top: 16px;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#git-link {
+    text-decoration: none;
+    color: #89929b;
+}
+
+    #git-link:hover {
+        color: #cea5fb;
+    }
