@@ -84,7 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     borderWidth: 0,
                     fontColor: "#161b22"
                 }]
-            }
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'left',
+                    },
+                },
+
+            },
         });
 
         const raceLabels = Object.keys(raceData);
@@ -106,10 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 responsive: true,
                 plugins: {
                     legend: {
-                        position: 'top',
+                        position: 'bottom',
+                        "labels": {
+                            "fontSize": 12,
+                        }
                     },
                 },
-                
             },
         });
 
@@ -189,20 +200,38 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             options: {
                 indexAxis: 'y',
+
                 scales: {
                     y: {
                         grid: {
                             color: "#161b22"
                         },
                         ticks: {
-                            color: "#89929b"
+                            callback: function (value, index, values) {
+                                if ((this.getLabelForValue(index)) == "Black or African American") {
+                                    return "Black"
+                                }
+                                else if((this.getLabelForValue(index)) == "Hispanic or Latino") {
+                                    return "Hispanic"
+                                }
+                                else if ((this.getLabelForValue(index)) == "Native Hawaiian or Other Pacific Islander") {
+                                    return "Native/Islander"
+                                }
+                                else {
+                                    return this.getLabelForValue(index)
+                                }
+                            },
+                            color: "#89929b",
+                            font: {
+                                size: 10,
+                            }
                         },
                         title: {
                             display: true,
                             text: 'Race/Ethnicity',
                             color: '#ecf2f8',
                             font: {
-                                size: 14
+                                size: 14,
                             }
                         }
                     },

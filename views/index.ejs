@@ -44,21 +44,120 @@
                 <% if (status == "loggedIn") { %>
                     <% if (user.role == "admin") { %>
                         <h5 class="card-title">&#128075; Welcome <%= user.fname %> <%= user.lname %>! (Admin)</h5>
-                        <h6 class="card-title">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                        <h6 class="card-title">The mission of the Democratic-Decisions web application is to empower users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
                         <p class="card-text">Create a poll or view analytics on existing polls.</p>
                         <form onsubmit="return false;" id="create_poll">
                             <button onclick="document.location='/poll?<%=user.email%>'" class="btn btn-primary">Create a poll &nbsp;<i class='fas fa-pencil-alt' style='font-size:16px'></i></button>
                         </form>
                      <% } else { %>
                         <h5 class="card-title">&#128075; Welcome <%= user.fname %> <%= user.lname %>! (Voter)</h5>
-                        <h6 class="card-subtitle mb-2">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                        <h6 class="card-subtitle mb-2">The mission of the Democratic-Decisions web application is to empower users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
                      <% } %>
                 <% } else { %>
                     <h5 class="card-title"> &#128075; Welcome to Democratic-Decisions!</h5>
                     <br>
-                    <h6 class="card-subtitle">The mission of the Democratic-Decisions web application is to enable users to engage in democratic decision-making through voting. Its goal is to provide a platform where users can create polls, gain insights into poll results, and participate in voting on various topics.</h6>
+                    <h6 class="card-subtitle">The mission of the Democratic-Decisions application is to empower users to engage in democratic decision-making. Its goal is to provide a platform where users can create polls, gain insights, and participate in decision-making.</h6>
                     <br>
-                    <p class="card-text">Login to get started. If you are not a user, start registration.</p>
+                    <a class="info-text"><i class="fa fa-info-circle" style="font-size:16px"></i> Hover over or click on images to see info about remote locations across the world.</a>
+
+                    <div class="container-images">
+                        <div class="container-images-slide">
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/india.jpeg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>India</h2>
+                                  <p>Porters carry Electronic Voting Machines (EVM) through Buxa tiger reserve forest to a remote polling station, in  West Bengal, India.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/australia.jpg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Australia</h2>
+                                  <p>Voting in the Australian general election even takes place in Antarctica.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/indonesia.jpeg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Indonesia</h2>
+                                  <p>Election ballots and boxes carried across Indonesia by motorcycle, boat, horse and on foot.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/Russia.jpg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Russia</h2>
+                                  <p>Women cast their ballots at a herding camp of Chazyr Aidash in Tuva, close to the Mongolian border.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/Timor.jpg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Timor-Liste</h2>
+                                  <p>UN helicopter drops off election materials and personnel for polling in remote areas in Timor-Leste, ahead of presidential election.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/Afghanistan.jpg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Afghanistan</h2>
+                                  <p>Afghanistan is preparing for parliamentary elections; Getting ballot boxes to far-flung villages, is no easy task.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="box">
+                              <div class="imgBx">
+                                <img src="/images/Solomon.jpg">
+                              </div>
+                              <div class="content">
+                                <div>
+                                  <h2>Solomon Islands</h2>
+                                  <p>New Zealand Defence Force assists in delivering ballot boxes by helicopter to remote areas of the Solomon Islands.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <p class=description-use>This application supports decision-making processes in various settings, such as classrooms, workplaces, organizations, 
+                    and communities. Anyone can participate in decision-making in a democracy.
+                        The application can be used for various types of polling, such as opinion polls, elections, surveys, referendums, and other decision-making processes.</p>
+                    <p class="description">The Democratic-Decisions application can be particularly beneficial in areas lacking infrastructure for physical polling locations and voting machines as shown in the images,
+                    as it is easily accessible to anyone with an internet-connected device.</p>
+                    <br>
+                    <h6 class="card-text">Login to get started. If you are not a user, start registration.</h6>
                     <a class="btn btn-success" href="/login" style="color: white; text-decoration: none;">
                         Login &nbsp;<i class="fas fa-sign-in-alt" style="font-size:16px"></i>
                     </a>
