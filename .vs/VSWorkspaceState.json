@@ -2,13 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\controllers",
+    "\\images",
     "\\public",
     "\\public\\css",
     "\\public\\js",
     "\\routes",
-    "\\test",
     "\\views"
   ],
-  "SelectedNode": "\\views\\analytics.ejs",
+  "SelectedNode": "\\controllers\\updateWinners.js",
   "PreviewInSolutionExplorer": false
 }

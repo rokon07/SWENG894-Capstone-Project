@@ -26,3 +26,10 @@
     #git-link:hover {
         color: #cea5fb;
     }
+
+
+@media only screen and (max-width: 500px) {
+    .container {
+        margin-top: 12px !important;
+    }
+}

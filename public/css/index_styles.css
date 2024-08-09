@@ -43,6 +43,7 @@ select {
     width: 100%;
     left: 0;
     text-align: center;
+    z-index: 0;
 }
 
 #git-link {
@@ -52,4 +53,220 @@ select {
 
 #git-link:hover {
     color: #cea5fb;
+}
+
+
+
+
+.container-images {
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+    .container-images::before,
+    .container-images::after {
+        background: linear-gradient(to right, #21262d 0%, rgba(255,255,255, 0) 100%);
+        content: '';
+        height: 100%;
+        margin-top: 10px;
+        position: absolute;
+        width: 16%;
+        margin-right: -1px;
+        z-index: 1;
+    }
+
+.container-images::before{
+    left: 0;
+    top: 0;
+}
+
+.container-images::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.container-images-slide{
+    display: flex;
+    width: calc(270px * 14);
+    animation: scroll 40s linear infinite;
+}
+
+.container-images-slide:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 6));
+    }
+}
+
+
+.container-images .box {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    background: #21262d;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 18px;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    border-radius: 5px;
+}
+
+
+.container-images .box:hover {
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+}
+
+.container-images .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+    .container-images .box .imgBx:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg,grey,#000);
+        z-index: 1;
+        opacity: 0;
+        transition: 0.5s;
+        mix-blend-mode: multiply;
+    }
+
+.container-images .box:hover .imgBx:before {
+    opacity: 1;
+}
+
+.container-images .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-images .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+    .container-images .box .content h2 {
+        color: #fff;
+        transition: 0.5s;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 20px;
+        transform: translateY(200px);
+        transition-delay: 0.3s;
+    }
+
+.container-images .box:hover .content h2 {
+    transform: translateY(0px);
+}
+
+.container-images .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+}
+
+.container-images .box:hover .content p {
+    transform: translateY(0px);
+}
+
+.info-text {
+    color: dodgerblue; 
+    font-weight: 700; 
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .info-text {
+        color: dodgerblue;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .container-images::before,
+    .container-images::after {
+        margin-top: 10px;
+    }
+
+    .container-images .box .content h2 {
+        font-size: 12px;
+    }
+
+    .container-images .box .content p {
+        font-size: 12px;
+    }
+
+    .main{
+        margin-bottom: 68px !important;
+    }
+
+    .container {
+        margin-top: 10px !important;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+
+    .card-subtitle {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .container-images .box {
+        width: 175px;
+        height: 175px;
+        margin: 10px;
+        margin-right: 5px;
+        margin-bottom: 0px;
+    }
+
+    .description {
+        margin-top: 15px;
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .description-use {
+        display: none;
+    }
 }

@@ -3,16 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\analytics.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\updateWinners.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\verifyPollCode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\poll_analytics.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\poll_analytics.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\analytics.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\analytics_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\login_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\poll_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\poll.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\poll.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\index_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\index_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:views\\index.ejs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\register_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\create_poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\updateWinners.test.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\search_sort.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -21,14 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\pollDetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\pollDetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\pages.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\updateWinners.test.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\test\\remove.test.mjs||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -51,24 +135,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\register_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollAnalytics.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\pollAnalytics.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\poll.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\poll.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -79,44 +147,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\removePoll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\create_poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\poll_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\analytics_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\updateWinners.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\index_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\index_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\loggedIn.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\logout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\vote_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -127,32 +159,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\cast_vote.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\search_sort.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\js\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\css\\login_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\db-config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\verifyPollCode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\pollCandidates.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -171,20 +179,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\vote.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\poll.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\viewPolls.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\viewPolls.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\Source\\Repos\\SWENG894-Capstone-Project\\controllers\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:controllers\\register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -193,8 +193,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 637,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 543,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -202,290 +202,118 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "updateWinners.test.mjs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs",
-              "RelativeDocumentMoniker": "test\\updateWinners.test.mjs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs",
-              "RelativeToolTip": "test\\updateWinners.test.mjs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-15T01:13:53.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "poll_analytics.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\poll_analytics.js",
               "RelativeDocumentMoniker": "public\\js\\poll_analytics.js",
               "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\poll_analytics.js",
               "RelativeToolTip": "public\\js\\poll_analytics.js",
-              "ViewState": "AQIAAPAAAAAAAAAAAADwvw0BAAAAAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAUwNsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-29T01:23:07.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "analytics.ejs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs",
-              "RelativeDocumentMoniker": "views\\analytics.ejs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs",
-              "RelativeToolTip": "views\\analytics.ejs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAqwEMAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-26T01:24:17.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "package-lock.json",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package-lock.json",
-              "RelativeDocumentMoniker": "package-lock.json",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package-lock.json",
-              "RelativeToolTip": "package-lock.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-22T02:28:14.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "remove.test.mjs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\remove.test.mjs",
-              "RelativeDocumentMoniker": "test\\remove.test.mjs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\remove.test.mjs",
-              "RelativeToolTip": "test\\remove.test.mjs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAA6AAAA",
+              "DocumentIndex": 20,
+              "Title": "logout.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
+              "RelativeDocumentMoniker": "controllers\\logout.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
+              "RelativeToolTip": "controllers\\logout.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-30T03:12:33.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "vote.test.mjs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\vote.test.mjs",
-              "RelativeDocumentMoniker": "test\\vote.test.mjs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\vote.test.mjs",
-              "RelativeToolTip": "test\\vote.test.mjs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-30T03:07:58.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "pollAnalytics.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollAnalytics.js",
-              "RelativeDocumentMoniker": "controllers\\pollAnalytics.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollAnalytics.js",
-              "RelativeToolTip": "controllers\\pollAnalytics.js",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-26T01:23:59.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "poll.html",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\poll.html",
-              "RelativeDocumentMoniker": "public\\poll.html",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\poll.html",
-              "RelativeToolTip": "public\\poll.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-09T04:30:19.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "pages.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
-              "RelativeDocumentMoniker": "routes\\pages.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
-              "RelativeToolTip": "routes\\pages.js",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-08T01:58:34.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "pollDetails.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollDetails.js",
-              "RelativeDocumentMoniker": "controllers\\pollDetails.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollDetails.js",
-              "RelativeToolTip": "controllers\\pollDetails.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-15T01:47:38.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.ejs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
-              "RelativeDocumentMoniker": "views\\index.ejs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
-              "RelativeToolTip": "views\\index.ejs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAABUAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-08T02:03:54.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "poll.test.mjs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\poll.test.mjs",
-              "RelativeDocumentMoniker": "test\\poll.test.mjs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\poll.test.mjs",
-              "RelativeToolTip": "test\\poll.test.mjs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-30T03:01:00.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "app.test.mjs",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\app.test.mjs",
-              "RelativeDocumentMoniker": "test\\app.test.mjs",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\app.test.mjs",
-              "RelativeToolTip": "test\\app.test.mjs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-30T01:41:58.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package.json",
-              "RelativeDocumentMoniker": "package.json",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package.json",
-              "RelativeToolTip": "package.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-17T03:01:20.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "login.html",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
-              "RelativeDocumentMoniker": "public\\login.html",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
-              "RelativeToolTip": "public\\login.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-08T01:54:29.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "register.html",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
-              "RelativeDocumentMoniker": "public\\register.html",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
-              "RelativeToolTip": "public\\register.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-08T02:03:09.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "vote.html",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
-              "RelativeDocumentMoniker": "public\\vote.html",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
-              "RelativeToolTip": "public\\vote.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-09T20:47:14.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "create_poll.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js",
-              "RelativeDocumentMoniker": "public\\js\\create_poll.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js",
-              "RelativeToolTip": "public\\js\\create_poll.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAACOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-12T01:40:15.141Z"
+              "WhenOpened": "2024-06-09T23:57:02.593Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "updateWinners.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js",
-              "RelativeDocumentMoniker": "controllers\\updateWinners.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js",
-              "RelativeToolTip": "controllers\\updateWinners.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-22T19:55:30.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "login.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
-              "RelativeDocumentMoniker": "public\\js\\login.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
-              "RelativeToolTip": "public\\js\\login.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-10T00:00:14.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "removePoll.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\removePoll.js",
-              "RelativeDocumentMoniker": "controllers\\removePoll.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\removePoll.js",
-              "RelativeToolTip": "controllers\\removePoll.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-22T01:38:54.18Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "login.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\login.js",
               "RelativeDocumentMoniker": "controllers\\login.js",
               "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\login.js",
               "RelativeToolTip": "controllers\\login.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T03:24:48.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
-              "RelativeDocumentMoniker": "index.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
-              "RelativeToolTip": "index.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "DocumentIndex": 12,
+              "Title": "register.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
+              "RelativeDocumentMoniker": "public\\js\\register.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
+              "RelativeToolTip": "public\\js\\register.js",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAqwCQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-08T01:55:48.499Z"
+              "WhenOpened": "2024-06-08T03:51:00.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 3,
+              "Title": "analytics.ejs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs",
+              "RelativeDocumentMoniker": "views\\analytics.ejs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\analytics.ejs",
+              "RelativeToolTip": "views\\analytics.ejs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAQwGAAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-26T01:24:17.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "create_poll.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js",
+              "RelativeDocumentMoniker": "public\\js\\create_poll.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\create_poll.js",
+              "RelativeToolTip": "public\\js\\create_poll.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-12T01:40:15.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "verifyPollCode.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js",
+              "RelativeDocumentMoniker": "controllers\\verifyPollCode.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js",
+              "RelativeToolTip": "controllers\\verifyPollCode.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-23T01:10:46.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "updateWinners.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js",
+              "RelativeDocumentMoniker": "controllers\\updateWinners.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\updateWinners.js",
+              "RelativeToolTip": "controllers\\updateWinners.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-22T19:55:30.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.ejs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
+              "RelativeDocumentMoniker": "views\\index.ejs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\views\\index.ejs",
+              "RelativeToolTip": "views\\index.ejs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-08T02:03:54.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "loggedIn.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\loggedIn.js",
               "RelativeDocumentMoniker": "controllers\\loggedIn.js",
@@ -497,67 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "cast_vote.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\cast_vote.js",
-              "RelativeDocumentMoniker": "public\\js\\cast_vote.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\cast_vote.js",
-              "RelativeToolTip": "public\\js\\cast_vote.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-15T01:17:04.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "logout.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
-              "RelativeDocumentMoniker": "controllers\\logout.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\logout.js",
-              "RelativeToolTip": "controllers\\logout.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-09T23:57:02.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "search_sort.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js",
-              "RelativeDocumentMoniker": "public\\js\\search_sort.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js",
-              "RelativeToolTip": "public\\js\\search_sort.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-07T01:50:46.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "login_styles.css",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css",
-              "RelativeDocumentMoniker": "public\\css\\login_styles.css",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css",
-              "RelativeToolTip": "public\\css\\login_styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-07T01:17:02.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "register.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
-              "RelativeDocumentMoniker": "public\\js\\register.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\register.js",
-              "RelativeToolTip": "public\\js\\register.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-08T03:51:00.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 18,
               "Title": "db-config.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\db-config.js",
               "RelativeDocumentMoniker": "routes\\db-config.js",
@@ -569,7 +337,271 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "poll.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\poll.html",
+              "RelativeDocumentMoniker": "public\\poll.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\poll.html",
+              "RelativeToolTip": "public\\poll.html",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-09T04:30:19.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "pages.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
+              "RelativeDocumentMoniker": "routes\\pages.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\routes\\pages.js",
+              "RelativeToolTip": "routes\\pages.js",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:58:34.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
+              "RelativeDocumentMoniker": "public\\register.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\register.html",
+              "RelativeToolTip": "public\\register.html",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAE4AAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-08T02:03:09.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-06-17T03:01:28.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "updateWinners.test.mjs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs",
+              "RelativeDocumentMoniker": "test\\updateWinners.test.mjs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\updateWinners.test.mjs",
+              "RelativeToolTip": "test\\updateWinners.test.mjs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-15T01:13:53.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-17T03:01:07.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
+              "RelativeDocumentMoniker": "public\\login.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\login.html",
+              "RelativeToolTip": "public\\login.html",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAFsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-08T01:54:29.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "poll.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\poll.js",
+              "RelativeDocumentMoniker": "controllers\\poll.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\poll.js",
+              "RelativeToolTip": "controllers\\poll.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-12T01:38:35.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "remove.test.mjs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\remove.test.mjs",
+              "RelativeDocumentMoniker": "test\\remove.test.mjs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\remove.test.mjs",
+              "RelativeToolTip": "test\\remove.test.mjs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-30T03:12:33.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "pollDetails.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollDetails.js",
+              "RelativeDocumentMoniker": "controllers\\pollDetails.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollDetails.js",
+              "RelativeToolTip": "controllers\\pollDetails.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-15T01:47:38.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "pollAnalytics.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollAnalytics.js",
+              "RelativeDocumentMoniker": "controllers\\pollAnalytics.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollAnalytics.js",
+              "RelativeToolTip": "controllers\\pollAnalytics.js",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-26T01:23:59.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "vote.test.mjs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\vote.test.mjs",
+              "RelativeDocumentMoniker": "test\\vote.test.mjs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\vote.test.mjs",
+              "RelativeToolTip": "test\\vote.test.mjs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-30T03:07:58.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
+              "RelativeDocumentMoniker": "index.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\index.js",
+              "RelativeToolTip": "index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T01:55:48.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "search_sort.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js",
+              "RelativeDocumentMoniker": "public\\js\\search_sort.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\search_sort.js",
+              "RelativeToolTip": "public\\js\\search_sort.js",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-07T01:50:46.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package-lock.json",
+              "RelativeDocumentMoniker": "package-lock.json",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package-lock.json",
+              "RelativeToolTip": "package-lock.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-22T02:28:14.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "poll.test.mjs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\poll.test.mjs",
+              "RelativeDocumentMoniker": "test\\poll.test.mjs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\poll.test.mjs",
+              "RelativeToolTip": "test\\poll.test.mjs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-30T03:01:00.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "app.test.mjs",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\app.test.mjs",
+              "RelativeDocumentMoniker": "test\\app.test.mjs",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\test\\app.test.mjs",
+              "RelativeToolTip": "test\\app.test.mjs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-30T01:41:58.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-17T03:01:20.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "vote.html",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
+              "RelativeDocumentMoniker": "public\\vote.html",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\vote.html",
+              "RelativeToolTip": "public\\vote.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-09T20:47:14.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
+              "RelativeDocumentMoniker": "public\\js\\login.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\login.js",
+              "RelativeToolTip": "public\\js\\login.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-10T00:00:14.88Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 35,
+              "Title": "removePoll.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\removePoll.js",
+              "RelativeDocumentMoniker": "controllers\\removePoll.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\removePoll.js",
+              "RelativeToolTip": "controllers\\removePoll.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-22T01:38:54.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "cast_vote.js",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\cast_vote.js",
+              "RelativeDocumentMoniker": "public\\js\\cast_vote.js",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\cast_vote.js",
+              "RelativeToolTip": "public\\js\\cast_vote.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-15T01:17:04.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "auth.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\auth.js",
               "RelativeDocumentMoniker": "controllers\\auth.js",
@@ -581,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "vote.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\vote.js",
               "RelativeDocumentMoniker": "controllers\\vote.js",
@@ -593,19 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env",
-              "RelativeDocumentMoniker": ".env",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\.env",
-              "RelativeToolTip": ".env",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-17T03:01:07.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "pollCandidates.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\pollCandidates.js",
               "RelativeDocumentMoniker": "controllers\\pollCandidates.js",
@@ -617,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "remove_poll.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\remove_poll.js",
               "RelativeDocumentMoniker": "public\\js\\remove_poll.js",
@@ -629,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "verify_poll.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\js\\verify_poll.js",
               "RelativeDocumentMoniker": "public\\js\\verify_poll.js",
@@ -641,31 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "verifyPollCode.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js",
-              "RelativeDocumentMoniker": "controllers\\verifyPollCode.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\verifyPollCode.js",
-              "RelativeToolTip": "controllers\\verifyPollCode.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-23T01:10:46.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "poll.js",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\poll.js",
-              "RelativeDocumentMoniker": "controllers\\poll.js",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\poll.js",
-              "RelativeToolTip": "controllers\\poll.js",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAACEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-12T01:38:35.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "viewPolls.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\viewPolls.js",
               "RelativeDocumentMoniker": "controllers\\viewPolls.js",
@@ -677,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "register.js",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\controllers\\register.js",
               "RelativeDocumentMoniker": "controllers\\register.js",
@@ -686,77 +682,77 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-09T05:02:48.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-06-17T03:01:28.848Z"
             }
           ]
         },
         {
-          "DockedWidth": 213,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 307,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "register_styles.css",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css",
-              "RelativeDocumentMoniker": "public\\css\\register_styles.css",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css",
-              "RelativeToolTip": "public\\css\\register_styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-10T06:11:45.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "poll_styles.css",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css",
-              "RelativeDocumentMoniker": "public\\css\\poll_styles.css",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css",
-              "RelativeToolTip": "public\\css\\poll_styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-29T21:45:17.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "analytics_styles.css",
-              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css",
-              "RelativeDocumentMoniker": "public\\css\\analytics_styles.css",
-              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css",
-              "RelativeToolTip": "public\\css\\analytics_styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-29T07:17:49.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 8,
               "Title": "index_styles.css",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\index_styles.css",
               "RelativeDocumentMoniker": "public\\css\\index_styles.css",
               "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\index_styles.css",
               "RelativeToolTip": "public\\css\\index_styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAANsAAAAAAAAAAAAAAP4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-07T02:56:18.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 10,
+              "Title": "register_styles.css",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css",
+              "RelativeDocumentMoniker": "public\\css\\register_styles.css",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\register_styles.css",
+              "RelativeToolTip": "public\\css\\register_styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-10T06:11:45.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "poll_styles.css",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css",
+              "RelativeDocumentMoniker": "public\\css\\poll_styles.css",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\poll_styles.css",
+              "RelativeToolTip": "public\\css\\poll_styles.css",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-29T21:45:17.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "analytics_styles.css",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css",
+              "RelativeDocumentMoniker": "public\\css\\analytics_styles.css",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\analytics_styles.css",
+              "RelativeToolTip": "public\\css\\analytics_styles.css",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-29T07:17:49.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login_styles.css",
+              "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css",
+              "RelativeDocumentMoniker": "public\\css\\login_styles.css",
+              "ToolTip": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\login_styles.css",
+              "RelativeToolTip": "public\\css\\login_styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-07T01:17:02.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "vote_styles.css",
               "DocumentMoniker": "C:\\Users\\Rokon\\source\\repos\\SWENG894-Capstone-Project\\public\\css\\vote_styles.css",
               "RelativeDocumentMoniker": "public\\css\\vote_styles.css",

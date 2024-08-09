@@ -47,10 +47,14 @@
     <div class="container">
         <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
-                <h5 class="card-title">Poll analytics for: <%= poll.title %></h5>
+                <div class="card-body-header">
+                <h5 class="card-title"><%= poll.title %> Analytics Dashboard</h5>
                 <p class="card-text">Below you can see a few different helpful charts. The charts provide in-depth analysis of polling data.</p>
-                <button class="btn btn-success mt-auto" onclick="showPollTable()">Show poll table</button>
-                <button class="btn btn-success mt-auto" onclick="downloadPollData()">Download poll data</button>
+                <a style="color: dodgerblue; font-weight: 500;"><i class="fa fa-info-circle" style="font-size:18px"></i> You can hover over to see values and click on legend values to filter.</a>
+                </div>
+                <br>
+                <button class="btn btn-success mt-auto" onclick="showPollTable()">Show poll table &nbsp;<i class="fa fa-table" style="font-size:16px"></i></button>
+                <button class="btn btn-info mt-auto" onclick="downloadPollData()" style="margin-left:10px;">Download poll data &nbsp;<i class="fa fa-download" style="font-size:16px"></i></button>
                 <div id="pollTableContainer" style="display:none;">
                     <h5 class="mt-5">Votes Data Table</h5>
                     <table id="pollTable" class="poll_data_table">
@@ -84,19 +88,21 @@
     <div class="container">
         <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
-                <h5 class="card-title">Poll bar chart for: <%= poll.title %></h5>
+                <h5 class="card-title">Bar chart showing candidates/options and votes they received.</h5>
                 <canvas id="pollChart"></canvas>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="card" id="main" style="background-color: #21262d; color: #ecf2f8;">
-            <div class="card-body">
-                <h5 class="card-title">Poll gender distribution chart for: <%= poll.title %></h5>
+        <div class="card-pie" id="main" style="background-color: #21262d; color: #ecf2f8;">
+            <div class="card-body" style="background-color: #21262d; color: #ecf2f8;">
+                <h5 class="card-title">Pie chart showing votes based on gender.</h5>
+                <br>
                 <canvas id="genderChart"></canvas>
             </div>
             <div class="card-body" style="background-color: #21262d; color: #ecf2f8;">
-                <h5 class="card-title">Poll race distribution chart for: <%= poll.title %></h5>
+                <h5 class="card-title">Pie chart showing votes based on race/ethnicity.</h5>
+                <br>
                 <canvas id="raceChart"></canvas>
             </div>
         </div>
@@ -104,7 +110,7 @@
     <div class="container">
         <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
-                <h5 class="card-title">Poll bar chart for age groups: <%= poll.title %></h5>
+                <h5 class="card-title">Bar chart showing votes based on age groups.</h5>
                 <canvas id="ageGroupChart"></canvas>
             </div>
         </div>
@@ -112,7 +118,7 @@
     <div class="container">
         <div class="card" id="main" style="width: 100%; background-color: #21262d; color: #ecf2f8;">
             <div class="card-body">
-                <h5 class="card-title">Poll bar chart for race: <%= poll.title %></h5>
+                <h5 class="card-title">Horizontal bar chart showing race/ethinicity and the candidates/option they voted.</h5>
                 <canvas id="raceCandidateChart"></canvas>
             </div>
         </div>
